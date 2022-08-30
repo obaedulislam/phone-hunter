@@ -36,7 +36,7 @@ const displayPhones = (phones, dataLimit) => {
                 <h6 class="card-text">Brand: ${phone.brand}</h6>
 
                 <!-- Button trigger modal -->
-                <button onclick="loadPhoneDetails('${phone.slug}')" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#phoneDetailModal">Show Details</button>
+                <button onclick="loadPhoneDetails('${phone.slug}')" class="btn btn-success mt-2" data-bs-toggle="modal" data-bs-target="#phoneDetailModal">Show Details</button>
             </div>
         </div>
         `;
@@ -99,12 +99,12 @@ const desplayPhoneDetails = phone =>{
     const modalBody = document.getElementById('modal-body');
     modalBody.innerHTML = `
             <div class="row w-100">
-            <div class="col-md-5 col-sm12">
+            <div class="col-lg-5 col-md-5 col-sm12">
                 <div class="phone-img">
-                    <img src="${phone['image']}" alt="" srcset="" class="img-fluid">
+                    <img src="${phone['image']}" alt="" srcset="" class="img-fluid w-100">
                 </div>
             </div>
-            <div class="col-md-7 col-sm-12">
+            <div class="col-lg-7 col-md-7 col-sm-12">
                 <div class="phone-desc">
                     <h4 class="mb-4"><b>Brand:</b> ${phone['brand']}</h4>
                     <p><b>Realease Date:</b> ${phone.releaseDate}</p>
