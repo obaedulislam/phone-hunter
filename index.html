@@ -16,7 +16,23 @@
         </section>
     </header>
     <main>
+        <section class="container d-flex justify-content-center mb-5">
+            <div class="search-form">
+                <input id="search-phone" class="py-2 px-3" type="text" placeholder="Search your phone">
+                <button id="btn-search" class="btn btn-primary py-2 rounded-0">Search Phone</button>
+            </div>
+        </section>
 
+        <section class="container">
+            <div id="phone-container" class="row row-cols-1 row-cols-md-4 g-4">
+            </div>
+        </section>
+
+        <section class="d-none mt-4" id="no-phone-found">
+            <div class="error-msg">
+                <h4 class="text-center">No phone found! please try again</h4>
+            </div>
+        </section>
     </main>
 
     <footer>
