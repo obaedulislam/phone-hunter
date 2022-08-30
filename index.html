@@ -10,16 +10,20 @@
 </head>
 <body>
     
-    <header class="py-4">
+    <header class="py-4 bg-danger">
         <section class="container">
-            <h1 class="text-center">Get Your Best Phone From Phone Hunter</h1>
+            <h1 class="text-center text-white fw-bold">Welcome to Phone Hunter</h1>
         </section>
     </header>
-    <main class="pb-4">
+    <main class="py-5 ">
+
+        <h1 class="text-center mb-3">Get Your Best Phone From Phone Hunter</h1>
         <section class="container d-flex justify-content-center mb-5">
-            <div class="search-form">
-                <input id="search-phone" class="py-2 px-3" type="text" placeholder="Search your phone">
-                <button id="btn-search" class="btn btn-primary py-2 rounded-0">Search Phone</button>
+            <div class="search-form w-50">
+                <div class="input-group mb-3">
+                    <input id="search-phone" type="text" class="form-control  fs-5" placeholder="Search your phone..." aria-label="Recipient's username" aria-describedby="btn-search">
+                    <button id="btn-search" class="btn btn-success px-3 fs-5 fw-semibold" type="button">Search</button>
+                </div>
             </div>
         </section>
 
@@ -27,7 +31,7 @@
             <div id="phone-container" class="row row-cols-1 row-cols-md-4 g-4">
             </div>
             <div id="show-all" class="show-all d-none text-center mt-4">
-                <button id="btn-show-all" class="btn btn-primary">Show All</button>
+                <button id="btn-show-all" class="btn btn-success py-2 px-5 fs-5 fw-semibold">Show All Phone</button>
             </div>
         </section>
 
@@ -37,6 +41,7 @@
             </div>
         </section>
 
+        <!--Spinner-->
         <section id="spinner" class="container  vh-100 d-none">
             <div class="d-flex justify-content-center align-items-center  ">
                 <div class="spinner-border text-primary" role="status">
@@ -44,10 +49,35 @@
                 </div>
               </div>
         </section>
+
+        <!--Modal-->
+        <section>
+            
+            <!-- Modal -->
+            <div class="modal fade modal-fullscreen-xl-down" id="phoneDetailModal" tabindex="-1" aria-labelledby="phoneDetailModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="phoneDetailModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" id="modal-body">
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  
+        </section>
     </main>
 
-    <footer>
-
+    <footer class="py-4 bg-danger">
+        <section class="container">
+            <p class="mb-0 text-center fw-semibold text-white">Copy Right &copy;2022 Phone Hunter | All right Reserbed by <a class="text-decoration-none text-light" href="http://obaedulislam.com/">Obaedul Islam</a></p>
+        </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="phone.js"></script>
